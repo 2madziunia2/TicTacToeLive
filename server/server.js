@@ -16,12 +16,12 @@ function init(io){
               io.emit("newRoom", roomName);
               allRooms.push(roomName);
               
-               deleteRoomTime = setTimeout(timee, 300000);
+               deleteRoomTime = setTimeout(timeToDeleteRoom, 300000);
               
             }
           
         });
-        function timee(roomName) {
+        function timeToDeleteRoom(roomName) {
             allRooms.splice(allRooms.indexOf(roomName),1);
         }
         //Reaction for join to Room reciving checking that the room have less than two users
