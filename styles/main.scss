@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+$mainFont:'Gochi Hand', cursive;
+$btnBackgroundColor:#2e2828;
+$btnHoverColor: #5b4f4f;
+$whiteColor:#ffffff;
+
+
+*{
+    margin: 10px auto;
+    font-family: $mainFont;
+   
+}
+.create-room{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    &__title{
+        font-size: 60px;
+        text-align: center;
+    }
+    &__title-symbols{
+        flex-basis: 100%;
+        width: 15%;
+    }
+    &__subtitle{
+        flex-basis: 100%;
+        text-align: center;
+        margin: 100px auto 5px auto ; 
+        font-size: 40px;
+    }
+    &__input{
+        min-width: 30%;
+        margin: 5px auto 5px auto ; 
+        padding: 8px;
+        font-size: 20px;
+        border-width: 3px;
+        border-color: #000000;
+        background-color: #FFFFFF;
+        color: #000000;
+        border-style: solid;
+        border-radius: 8px;
+        box-shadow: 4px 3px 2px rgba(0,0,0,.77);
+        text-align: center;
+    }
+    &__button{
+        min-width: 10%;
+        margin: 5px auto 5px auto ; 
+        padding: 8px;
+        font-size: 20px;
+        border-width: 3px;
+        border-color: #000000;
+        background-color: $btnBackgroundColor;
+        color: $whiteColor;
+        border-style: solid;
+        border-radius: 8px;
+        box-shadow: 4px 3px 2px rgba(94, 90, 90, 0.77);
+        text-align: center;
+
+        &:hover{
+            background-color: $btnHoverColor;
+        }
+    }
+
+}
+.active-rooms{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    &__subtitle{
+        flex-basis: 100%;
+        text-align: center;
+        margin: 10px auto 5px auto ; 
+        font-size: 40px;
+    }
+    &__button{
+        min-width: 10%;
+        margin: 5px auto 5px auto ; 
+        padding: 8px;
+        font-size: 20px;
+        border-width: 3px;
+        border-color: #000000;
+        background-color: $btnBackgroundColor;
+        color: $whiteColor;
+        border-style: solid;
+        border-radius: 8px;
+        box-shadow: 4px 3px 2px rgba(94, 90, 90, 0.77);
+        text-align: center;
+        
+        &:hover{
+            background-color: $btnHoverColor;
+        }
+    }
+}
+.room{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    &__title{
+        flex-basis: 100%;
+        text-align: center;
+        margin: 10px auto 5px auto ; 
+        font-size: 60px;
+    }
+    &__title-symbols{
+        flex-basis: 100%;
+        width:10%;
+    }
+
+}
+.game-board{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    &__table{
+       
+        flex-basis: 100%;
+    }
+    &__gameButton{
+        width:100px;
+        height:100px;
+        color:$whiteColor;
+        background-color: $btnBackgroundColor;
+        font-size:80px;
+        font-family: 'Seymour One', sans-serif;
+        border-style: solid;
+        border-radius: 8px;
+        box-shadow: 4px 3px 2px rgba(94, 90, 90, 0.77);
+        &:hover{
+            background-color: $btnHoverColor;
+            cursor: pointer;
+        }
+        &:disabled{
+           background-color: $btnHoverColor; 
+        }
+    }
+    &__button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    &__leave-button{
+        min-width: 10%;
+        margin: 5px; 
+        padding: 8px;
+        font-size: 20px;
+        border-width: 3px;
+        border-color: #000000;
+        background-color: $whiteColor;
+        color: $btnBackgroundColor;
+        border-style: solid;
+        border-radius: 8px;
+        box-shadow: 4px 3px 2px rgba(94, 90, 90, 0.77);
+        text-align: center;
+        
+        &:hover{
+            background-color: $btnHoverColor;
+        }
+    }
+    &__reset-button{
+        min-width: 10%;
+        margin: 5px ; 
+        padding: 8px;
+        font-size: 20px;
+        border-width: 3px;
+        border-color: #000000;
+        background-color: $whiteColor;
+        color: $btnBackgroundColor;
+        border-style: solid;
+        border-radius: 8px;
+        box-shadow: 4px 3px 2px rgba(94, 90, 90, 0.77);
+        text-align: center;
+      
+        &:hover{
+            background-color: $btnHoverColor;
+        }
+    }
+    &__info{
+        flex-basis: 100%;
+        text-align: center;
+        margin: 5px auto 5px auto ; 
+        font-size: 30px;
+    }
+    
+   
+}

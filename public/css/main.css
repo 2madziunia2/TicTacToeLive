@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+* {
+  margin: 10px auto;
+  font-family: "Gochi Hand", cursive;
+}
+
+.create-room {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.create-room__title {
+  font-size: 60px;
+  text-align: center;
+}
+.create-room__title-symbols {
+  flex-basis: 100%;
+  width: 15%;
+}
+.create-room__subtitle {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 100px auto 5px auto;
+  font-size: 40px;
+}
+.create-room__input {
+  min-width: 30%;
+  margin: 5px auto 5px auto;
+  padding: 8px;
+  font-size: 20px;
+  border-width: 3px;
+  border-color: #000000;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 8px;
+  box-shadow: 4px 3px 2px rgba(0, 0, 0, 0.77);
+  text-align: center;
+}
+.create-room__button {
+  min-width: 10%;
+  margin: 5px auto 5px auto;
+  padding: 8px;
+  font-size: 20px;
+  border-width: 3px;
+  border-color: #000000;
+  background-color: #2e2828;
+  color: #ffffff;
+  border-style: solid;
+  border-radius: 8px;
+  box-shadow: 4px 3px 2px rgba(94, 90, 90, 0.77);
+  text-align: center;
+}
+.create-room__button:hover {
+  background-color: #5b4f4f;
+}
+
+.active-rooms {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.active-rooms__subtitle {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 10px auto 5px auto;
+  font-size: 40px;
+}
+.active-rooms__button {
+  min-width: 10%;
+  margin: 5px auto 5px auto;
+  padding: 8px;
+  font-size: 20px;
+  border-width: 3px;
+  border-color: #000000;
+  background-color: #2e2828;
+  color: #ffffff;
+  border-style: solid;
+  border-radius: 8px;
+  box-shadow: 4px 3px 2px rgba(94, 90, 90, 0.77);
+  text-align: center;
+}
+.active-rooms__button:hover {
+  background-color: #5b4f4f;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.room__title {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 10px auto 5px auto;
+  font-size: 60px;
+}
+.room__title-symbols {
+  flex-basis: 100%;
+  width: 10%;
+}
+
+.game-board {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.game-board__table {
+  flex-basis: 100%;
+}
+.game-board__gameButton {
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+  background-color: #2e2828;
+  font-size: 80px;
+  font-family: "Seymour One", sans-serif;
+  border-style: solid;
+  border-radius: 8px;
+  box-shadow: 4px 3px 2px rgba(94, 90, 90, 0.77);
+}
+.game-board__gameButton:hover {
+  background-color: #5b4f4f;
+  cursor: pointer;
+}
+.game-board__gameButton:disabled {
+  background-color: #5b4f4f;
+}
+.game-board__button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.game-board__leave-button {
+  min-width: 10%;
+  margin: 5px;
+  padding: 8px;
+  font-size: 20px;
+  border-width: 3px;
+  border-color: #000000;
+  background-color: #ffffff;
+  color: #2e2828;
+  border-style: solid;
+  border-radius: 8px;
+  box-shadow: 4px 3px 2px rgba(94, 90, 90, 0.77);
+  text-align: center;
+}
+.game-board__leave-button:hover {
+  background-color: #5b4f4f;
+}
+.game-board__reset-button {
+  min-width: 10%;
+  margin: 5px;
+  padding: 8px;
+  font-size: 20px;
+  border-width: 3px;
+  border-color: #000000;
+  background-color: #ffffff;
+  color: #2e2828;
+  border-style: solid;
+  border-radius: 8px;
+  box-shadow: 4px 3px 2px rgba(94, 90, 90, 0.77);
+  text-align: center;
+}
+.game-board__reset-button:hover {
+  background-color: #5b4f4f;
+}
+.game-board__info {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 5px auto 5px auto;
+  font-size: 30px;
+}/*# sourceMappingURL=main.css.map */

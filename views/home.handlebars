@@ -1,0 +1,55 @@
+<form id="create-room" action="#">
+        <div class="create-room">
+            <h1 class="create-room__title">WITAMY W TIC TAC TOE</h1>
+            <img class="create-room__title-symbols"src="/images/logo.png" alt="logo">
+            <h2 class="create-room__subtitle">Tworzenie pokoju</h2>
+            <input id="room-name" class="create-room__input" type="text" placeholder="podaj nazwę pokoju" >
+            <button type="submit" id="sub" class="create-room__button create-room__button--onhover">Stwórz</button>
+            <p id="nameExist" class="create-room__name-exist"></p>
+        </div>  
+</form>
+
+<div id="roomsContainer" class="active-rooms">
+    <h2 class="active-rooms__subtitle">Aktywne Pokoje</h2>
+        <script  type="text/x-handlebars-template" id="rooms-window">
+
+                    <br>
+                    <button class="joinToRoomButton active-rooms__button">\{{ roomName }} </button>
+                    <br>
+                                                        
+        </script>
+        <p id="fullRoomInfo" class="active-rooms__message">{{fullRoomMessage}}</p>
+</div>   
+
+<div id="room" class="room">
+    <script  type="text/x-handlebars-template" id="room-window">
+      <p class="room__title">Witaj w pokoju \{{roomName}}</p>
+      <img class="room__title-symbols"src="/images/logo.png" alt="logo">
+  
+    </script>
+</div>                           
+    
+    <div id="gameBoard" class="game-board">
+        <p id="gameInfo" class="game-board__info"></p>
+        <table class="game-board__table">
+            <tr>
+                <td><button class="game-board__gameButton" value="0"></button></td>
+                <td><button class="game-board__gameButton" value="1"></button></td>
+                <td><button class="game-board__gameButton" value="2"></button></td>
+            </tr>            <tr>
+                <td><button class="game-board__gameButton" value="3"></button></td>
+                <td><button class="game-board__gameButton" value="4"></button></td>
+                <td><button class="game-board__gameButton" value="5"></button></td>
+            </tr>
+            <tr>
+                <td><button class="game-board__gameButton" value="6"></button></td>
+                <td><button class="game-board__gameButton" value="7"></button></td>
+                <td><button class="game-board__gameButton" value="8"></button></td>
+            </tr>
+        </table>
+        <div class="game-board__button-container">
+      <button id="leave" class="game-board__leave-button">leave room</button>      
+     <button id="reset" class="game-board__reset-button">reset</button>  
+     </div>  
+    </div>
+ 
